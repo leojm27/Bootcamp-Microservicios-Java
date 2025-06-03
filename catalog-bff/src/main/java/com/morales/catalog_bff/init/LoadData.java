@@ -62,7 +62,7 @@ public class LoadData {
             List<ProductoDTO> productos = productClient.getProductos();
 
             // Verificar si la lista de productos está vacía o nula
-            if(productos == null  || !productos.isEmpty()) {
+            if(productos == null  || productos.isEmpty()) {
                 for (CatalogoProductoDTO producto : catalogoInicial) {
                     CatalogoProductoDTO creado = catalogoService.createProducto(producto);
                     System.out.println("Producto creado: " + creado);
