@@ -76,5 +76,4 @@ O bien abrilos con tu IDE y ejecutalos desde `main()`.
 ---
 
 ## ✨ Autor
-- Leonardo Joaquin Morales. 
-- Bootcamp Backend Java.
+- Leonardo Joaquin Morales.
