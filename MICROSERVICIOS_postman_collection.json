@@ -804,7 +804,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"productoName\": \"Teclado mecánico Redragon Kumara\",\r\n    \"productoDescripcion\": \"Teclado gamer con retroiluminación LED RGB\",\r\n    \"productoPrecio\": 18999.0,\r\n    \"categoriaId\": 1,\r\n    \"inventarioCantidad\": 28,\r\n    \"inventarioCantidadMinima\": 5\r\n}",
+							"raw": "{\r\n    \"productoNombre\": \"Teclado mecánico Redragon Kumara\",\r\n    \"productoDescripcion\": \"Teclado gamer con retroiluminación LED RGB\",\r\n    \"productoPrecio\": 18999.0,\r\n    \"categoriaId\": 1,\r\n    \"inventarioCantidad\": 28,\r\n    \"inventarioCantidadMinima\": 5\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
