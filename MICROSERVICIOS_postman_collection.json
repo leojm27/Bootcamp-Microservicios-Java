@@ -1,0 +1,833 @@
+{
+	"info": {
+		"_postman_id": "2badf261-04e7-4219-9792-4af6aa868bee",
+		"name": "BOOTCAMP MICROSERVICIOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8934701"
+	},
+	"item": [
+		{
+			"name": "MS-PRODUCT",
+			"item": [
+				{
+					"name": "CATEGORIAS",
+					"item": [
+						{
+							"name": "CATEGORIAS",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/categorias",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"categorias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CATEGORIA POR ID",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/categorias/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"categorias",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREAR CATEGORIA",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Cuidado personal\",\r\n    \"descripcion\": \"Productos de higiene y cuidado personal.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/categorias",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"categorias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ACTUALIZAR CATEGORIA",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Alimentos\",\r\n    \"descripcion\": \"Alimentos no perecederos y de consumo masivo.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/categorias/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"categorias",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ELIMINAR CATEGORIA",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Hogar\"\r\n    //\"descripcion\": \"Artículos para el hogar y la cocina.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/categorias/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"categorias",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PRODUCTOS",
+					"item": [
+						{
+							"name": "PRODUCTOS",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PRODUCTOS POR ID",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/productos/18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"productos",
+										"18"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CREAR PRODUCTO",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"Shampoo Pantene 400ml\",\r\n    \"descripcion\": \"Shampoo para cabello normal a seco\",\r\n    \"precio\": 4299,\r\n    \"idCategoria\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/productos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ACTUALIZAR PRODUCTO",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // \"nombre\": \"Laptop Dell XPS 13\",\r\n    // \"descripcion\": \"Laptop Dell XPS 13\",\r\n    \"precio\": 1200.0\r\n    // \"idCategoria\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8082/api/productos/18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"productos",
+										"18"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ELIMINAR PRODUCTO",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "{{springSecurityUsername}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{springSecurityPassword}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/api/productos/18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"api",
+										"productos",
+										"18"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MS-INVENTORY",
+			"item": [
+				{
+					"name": "INVENTARIO PRODUCTO",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/inventario-producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"inventario-producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INVENTARIO PRODUCTO POR ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/inventario-producto/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"inventario-producto",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREAR INVENTARIO PRODUCTO",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productoId\": 1,\r\n    \"cantidad\": 28,\r\n    \"cantidadMinima\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/inventario-producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"inventario-producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZAR INVENTARIO PRODUCTO",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cantidad\": 20,\r\n    \"cantidadMinima\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/inventario-producto/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"inventario-producto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR INVENTARIO PRODUCTO",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/inventario-producto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"inventario-producto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ACTUALIZAR INVENTARIO POR PRODUCTO_ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cantidad\": 20,\r\n    \"cantidadMinima\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/inventario-producto/por-producto/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"inventario-producto",
+								"por-producto",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR INVENTARIO POR PRODUCTO_ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/inventario-producto/por-producto/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"inventario-producto",
+								"por-producto",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CATALOG-BFF",
+			"item": [
+				{
+					"name": "CATALOGO",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/catalogo/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"catalogo",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CATALOGO POR PRODUCTO_ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/catalogo/productos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"catalogo",
+								"productos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREAR CATALOGO PRODUCTO",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{springSecurityUsername}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "{{springSecurityPassword}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productoName\": \"Teclado mecánico Redragon Kumara\",\r\n    \"productoDescripcion\": \"Teclado gamer con retroiluminación LED RGB\",\r\n    \"productoPrecio\": 18999.0,\r\n    \"categoriaId\": 1,\r\n    \"inventarioCantidad\": 28,\r\n    \"inventarioCantidadMinima\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/catalogo/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"catalogo",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
